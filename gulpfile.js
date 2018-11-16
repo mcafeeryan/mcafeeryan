@@ -1,5 +1,6 @@
 // global requires
 var gulp = require('gulp');
+var watch = require('gulp-watch');
 
 // JS build requires
 var source = require('vinyl-source-stream');
@@ -21,7 +22,7 @@ gulp.task('css', function(){
     ))
     .on('error', console.error.bind(console))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('build/'));
 });
 
 // JS build
@@ -38,7 +39,12 @@ gulp.task('js', function(){
       path.dirname = '';
       path.extname = '.min.js';
     }))
-    .pipe(gulp.dest('build/'))
+    .pipe(gulp.dest('build/'));
 });
 
 gulp.task('default', ['css', 'js']);
+
+gulp.task('watch', function() {
+  gulp.watch(['frontend/**/*'], ['js', 'css']);
+});
+

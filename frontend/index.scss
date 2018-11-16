@@ -1,5 +1,35 @@
-$primary-color: #333;
-
-p {
-  color: $primary-color;
+* {
+  box-sizing: border-box;
 }
+
+h1 {
+  margin: none;
+}
+
+h2 {
+  margin: none;
+}
+
+.navbar {
+  .navbar-items {
+    display: flex;
+    list-style: none;
+  }
+}
+
+section {
+  min-height: 400px;
+}
+
+#intro {
+  background-color: red;
+}
+
+#about {
+  background-color: gray;
+}
+
+#contact {
+  background-color: orange;
+}
+
