@@ -2,29 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="text/html" charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ryan McAfee</title>
   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="assets/normalize.css">
   <link rel="stylesheet" href="build/index.min.css">
 </head>
 <body>
-  <section id="me">
-    <img src="./assets/ryan-headshot.png">
-  </section>
-  <section id="intro">
-    <h1>Ryan McAfee</h1>
-    <h2>Software Engineer/Human Being</h2>
-    <span>|</span>
-  </section>
-  <section id="about">
-    
-  </section>
-  <section id="contact">
-
-  </section>
-  <footer>
-    Designed and built by Ryan McAfee
-  </footer>
+  <div class="container">
+    <section id="me" class="column">
+      <img src="assets/ryan-headshot.png">
+    </section>
+    <section id="about" class="column">
+      <section class="heading">
+        <h1>
+          Hi, I'm Ryan
+        </h1>
+        <h2>
+          Software Engineer
+        </h2>
+      </section>
+      <section class="description">
+        <p>
+          I'm a software engineer currently employed at 
+          <a href="https://raise.me">RaiseMe</a>. I love solving hard problems 
+          and building things that have a positive impact in the world.
+        </p>
+      </section>
+      <section class="contact">
+        
+      </section>
+    </section>
+  </div>
   <script src="build/index.min.js"></script>
 </body>
 </html>
