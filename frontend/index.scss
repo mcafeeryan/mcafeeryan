@@ -10,6 +10,32 @@ h2 {
   margin: none;
 }
 
+#me {
+  img {
+    width: 50%;
+  }
+}
+
+#intro {
+  font-family: 'Source Code Pro', monospace;
+
+  h1 {
+  }
+  h2 {
+  }
+  span {
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes type {
+  from { width: 0; } 
+} 
+
+@keyframes blink {
+  to{opacity: 0;}
+}
+
 .navbar {
   .navbar-items {
     display: flex;
