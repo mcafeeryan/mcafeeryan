@@ -5,35 +5,90 @@
   <meta http-equiv="text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ryan McAfee</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Source+Code+Pro:300,400" rel="stylesheet">
   <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="build/index.min.css">
 </head>
 <body>
-  <div class="container">
-    <section id="me" class="column">
+  <div class="container main-container">
+    <div id="me" class="column-2">
       <img src="assets/ryan-headshot.png">
-    </section>
-    <section id="about" class="column">
-      <section class="heading">
-        <h1>
-          Hi, I'm Ryan
-        </h1>
-        <h2>
-          Software Engineer
-        </h2>
+    </div>
+    <div id="about" class="column-2">
+      <div style="padding: 0 40px">
+        <section class="heading">
+          <h1>
+            Hi, I'm Ryan.
+          </h1>
+        </section>
+        <hr class="show">
+        <section class="description">
+          <h2 class="about-title">
+            About Me
+          </h2>
+          <p>
+            I am a software engineer in San Francisco who loves solving hard problems
+            and building software that has a positive impact in the world. I currently work
+            at <a href="https://www.raise.me" target="_blank">RaiseMe</a> building software
+            to expand college access by making financial aid more transparent.
+          </p>
+          <p style="margin-bottom: 0">
+            I am at my best when diving into a new domain, debugging a gnarly problem,
+            or mentoring more junior engineers.
+          </p>
+        </section>
+      </div>
+      <hr>
+      <section class="skills">
+        <h2 class="skills-title">Top Skills</h2>
+        <div class="container">
+          <div class="column-3">
+            <i class="fas fa-hammer"></i>
+            <h4>Building</h4>
+            <p class="skill">
+              I am an expert at quickly building products / systems 
+              that deliver business value while minimizing tech debt.
+            </p>
+          </div>
+          <div class="column-3">
+            <i class="fas fa-sitemap"></i>
+            <h4>Architecting</h4>
+            <p class="skill">
+              I excel at architecting scalable solutions to complex
+              technical problems across the entire tech stack.
+            </p>
+          </div>
+          <div class="column-3">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <h4>Mentoring</h4>
+            <p class="skill">
+              I love to teach and mentor other engineers.
+              I view teaching as a force-multiplier for myself
+              and my team.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="description">
-        <p>
-          I'm a software engineer currently employed at 
-          <a href="https://raise.me">RaiseMe</a>. I love solving hard problems 
-          and building things that have a positive impact in the world.
-        </p>
-      </section>
+      <hr>
       <section class="contact">
-        
+        <h2 class="contact-title">Reach Out</h2>
+        <p>
+          Feel free to shoot me an email at <a href="mailto:ryan@mcafeeryan.com">ryan@mcafeeryan.com</a>.
+        </p>
+        <div class="container">
+          <div class="column-3">
+            <a href="mailto:ryan@mcafeeryan.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <div class="column-3">
+            <a href="https://github.com/mcafeeryan"><i class="fab fa-github-square"></i></a>
+          </div>
+          <div class="column-3">
+            <a href="https://www.linkedin.com/in/mcafeeryan/"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
       </section>
-    </section>
+    </div>
   </div>
   <script src="build/index.min.js"></script>
 </body>

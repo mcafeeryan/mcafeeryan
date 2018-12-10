@@ -1,10 +1,76 @@
+$background: #FCFCF8;
+$dark-gray: #19262E;
+$light-gray: #2A3C46;
+$link-color: #2D7B5E;
+$border-gray: #ADC1CD;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  overflow: hidden;
+  font-family: 'Slabo 27px', sans-serif;
+  background-color: $background;
+  color: $light-gray;
+}
+
+section {
+  padding-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 40px auto 32px auto;
+  padding-bottom: 3px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid $light-gray;
+}
+
+.about-title {
+  width: 120px;
+}
+
+.skills-title {
+  width: 120px;
+}
+
+.contact-title {
+  width: 124px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-color;
+  }
+
+  .fab, .fas {
+    color: $light-gray;
+  }
+}
+
+p {
+  margin-top: 0;
+
+  line-height: 1.4em;
+}
+
+hr {
+  border: none;
+}
+
+hr.show {
+  border: 1px solid $border-gray;
 }
 
 .container {
@@ -12,9 +78,17 @@ body {
   flex-wrap: wrap;
 }
 
-.column {
+.main-container {
+  height: 100vh;
+}
+
+.column-2 {
   width: 50%;
   height: 100%;
+}
+
+.column-3 {
+  width: 33%;
 }
 
 #me {
@@ -27,21 +101,58 @@ body {
 
 #about {
   overflow-y: scroll;
-  padding: 40px 80px;
+  padding: 80px 40px;
+  postition: -webkit-sticky;
+  position: sticky;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 20px;
+  color: $dark-gray;
 
   h1 {
     font-family: 'Source Code Pro', monospace;
-    animation: type 1s steps(12, end);
+    animation: type 2s steps(13, end);
+    font-size: 2.5rem;
+    font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
-    width: 240px;
+    width: 20rem;
   }
+
+  h2 {
+    margin-top: 16px;
+  }
+}
+
+.description, 
+.skills,
+.contact {
+  font-size: 18px;
+  text-align: center;
+}
+
+.skills {
+  font-size: 16px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+.fas,
+.fab {
+  font-size: 48px;
+}
+
+.skill {
+  padding: 10px;
 }
 
 @keyframes type {
