@@ -93,16 +93,35 @@ hr.show {
 
 #me {
   overflow: hidden;
+  background-image: url('../assets/ryan-headshot.png');
+  background-size: cover;
+  background-position-x: center;
+}
 
-  img {
-    width: 100%;
+#mobile-heading {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+
+  .mobile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 16px;
   }
+}
+
+footer {
+  margin-top: 10px;
+  font-size: .8rem;
+  text-align: center;
 }
 
 #about {
   overflow-y: scroll;
   padding: 80px 40px;
-  postition: -webkit-sticky;
+  padding-bottom: 20px;
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -120,7 +139,7 @@ hr.show {
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
-    width: 20rem;
+    width: 19.5rem;
   }
 
   h2 {
@@ -161,4 +180,52 @@ h4 {
 
 @keyframes blink {
   to { opacity: 0; }
+}
+
+@media only screen and (min-width: 993px) {
+  #me {
+    display: block;
+  }
+
+  #mobile-heading {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main-container {
+    height: 100%;
+  }
+
+  #me {
+    display: none;
+  }
+
+  #about {
+    position: initial;
+    overflow-y: auto;
+    padding-top: 0;
+
+    .heading {
+      display: none;
+    }
+  }
+
+  #mobile-heading {
+    display: block;
+  }
+
+  .heading h1 {
+    font-size: 1.8rem;
+    width: 14rem;
+  }
+
+  .column-2,
+  .column-3 {
+    width: 100%;
+  }
+
+  .column-3.maintain-width {
+    width: 33%;
+  }
 }
