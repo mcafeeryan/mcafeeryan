@@ -5,6 +5,7 @@
   <meta http-equiv="text/html" charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Ryan McAfee</title>
+  <meta name="description" content="Ryan McAfee's personal website." />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Slabo+27px|Source+Code+Pro:300,400" rel="stylesheet">
@@ -14,13 +15,35 @@
 </head>
 <body>
   <div class="container main-container">
-    <div id="me" class="column-2"></div>
+    <div id="me" role="img" aria-label="Ryan McAfee headshot" class="column-2"></div>
     <div id="mobile-heading">
-      <img class="mobile-image" src="assets/ryan-headshot.jpg"/>
+      <img alt="Ryan McAfee headshot" class="mobile-image" src="assets/ryan-headshot-small.jpg"/>
       <div class="heading">
         <h1>
           Hi, I'm Ryan.
         </h1>
+        <div class="container">
+          <div class="connect-icon">
+            <a aria-label="Resume" href="assets/ryan-resume.pdf">
+              <i class="far fa-file-pdf"></i>
+            </a>
+          </div>
+          <div class="connect-icon">
+            <a aria-label="LinkedIn" rel="noreferrer" href="https://www.linkedin.com/in/mcafeeryan/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="connect-icon">
+            <a aria-label="Github" rel="noreferrer" href="https://github.com/mcafeeryan">
+              <i class="fab fa-github-square"></i>
+            </a>
+          </div>
+          <div class="connect-icon">
+            <a aria-label="Email" href="mailto:ryan@mcafeeryan.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <div id="about" class="column-2">
@@ -29,6 +52,28 @@
           <h1>
             Hi, I'm Ryan.
           </h1>
+          <div class="container">
+            <div class="connect-icon">
+              <a aria-label="Resume" href="assets/ryan-resume.pdf">
+                <i class="far fa-file-pdf"></i>
+              </a>
+            </div>
+            <div class="connect-icon">
+              <a aria-label="LinkedIn" rel="noreferrer" href="https://www.linkedin.com/in/mcafeeryan/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <div class="connect-icon">
+              <a aria-label="Github" rel="noreferrer" href="https://github.com/mcafeeryan">
+                <i class="fab fa-github-square"></i>
+              </a>
+            </div>
+            <div class="connect-icon">
+              <a aria-label="Email" href="mailto:ryan@mcafeeryan.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
         </section>
         <hr class="show">
         <section class="description">
@@ -38,7 +83,7 @@
           <p>
             I am a software engineer in San Francisco who loves solving hard problems
             and building software that has a positive impact on the world. I currently work
-            at <a href="https://www.raise.me" target="_blank">RaiseMe</a> building software
+            at <a rel="noreferrer" href="https://www.raise.me" target="_blank">RaiseMe</a> building software
             to expand college access by making financial aid more transparent.
           </p>
           <p style="margin-bottom: 0">
@@ -84,23 +129,11 @@
         <p>
           Feel free to shoot me an email at <a href="mailto:ryan@mcafeeryan.com">ryan@mcafeeryan.com</a>.
         </p>
-        <div class="container">
-          <div class="column-3 maintain-width">
-            <a href="mailto:ryan@mcafeeryan.com"><i class="fas fa-envelope"></i></a>
-          </div>
-          <div class="column-3 maintain-width">
-            <a href="https://github.com/mcafeeryan"><i class="fab fa-github-square"></i></a>
-          </div>
-          <div class="column-3 maintain-width">
-            <a href="https://www.linkedin.com/in/mcafeeryan/"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
       </section>
       <footer>
         Built and maintained by Ryan McAfee 2019 <i class="far fa-copyright"></i>.
       </footer>
     </div>
   </div>
-  <script src="build/index.min.js"></script>
 </body>
 </html>

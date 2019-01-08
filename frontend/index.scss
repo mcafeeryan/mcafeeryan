@@ -48,13 +48,12 @@ h2 {
 
 a {
   color: $link-color;
-  text-decoration: none;
 
   &:visited {
     color: $link-color;
   }
 
-  .fab, .fas {
+  .fab, .fas, .far {
     color: $light-gray;
   }
 }
@@ -147,6 +146,17 @@ footer {
   }
 }
 
+.connect-icon {
+  margin-top: 20px;
+  margin-right: 20px;
+
+  .fas,
+  .fab,
+  .far {
+    font-size: 24px;
+  }
+}
+
 .description, 
 .skills,
 .contact {
@@ -223,9 +233,5 @@ h4 {
   .column-2,
   .column-3 {
     width: 100%;
-  }
-
-  .column-3.maintain-width {
-    width: 33%;
   }
 }
