@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/mcafeeryan92/mcafeeryan",
   "dependencies": {
-    "@babel/core": "^7.1.5",
+    "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.1.5",
     "babelify": "^10.0.0",
     "browserify": "^16.2.3",
